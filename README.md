@@ -2,12 +2,6 @@
   <img src="./public/logo.png">
 </p>
 <h1 align="center">DataV Vue</h1>
-<p align="center">
-  <a href="https://github.com/pengxiaotian/datav-vue/actions/workflows/main-deploy.yml">
-    <img src="https://github.com/pengxiaotian/datav-vue/actions/workflows/main-deploy.yml/badge.svg?branch=main">
-  </a>
-  <br>
-</p>
 <p align="center">一款数据可视化应用搭建工具</p>
 
 * 💪 Vue 3.0+
@@ -15,20 +9,6 @@
 * 🍍 Pinia 2.0+
 * 🔥 TypeScript 4.0+
 * 🔥 ECharts 5.0+
-
-## 关于贡献
-
-在完成第一个可用版本之前只接受 `fixbug PR`，不接受 `feature PR`。
-
-## 简介
-
-- [国外 GitHub](https://github.com/pengxiaotian/datav-vue)
-- [国内 Gitee](https://gitee.com/pengxiaotian/datav-vue)
-
-### 预览
-- [DataV 在线预览](https://datav.pengxiaotian.com)
-
-> 因 [RAP2](https://github.com/thx/rap2-delos) 只支持 `HTTP`, 所以只在开发环境中使用
 
 > 生产环境使用 [Mockjs](https://github.com/nuysoft/Mock) 代替
 
@@ -161,28 +141,6 @@ main-title
 }
 ```
 
-#### 使用 DataV-CLI-UI 工具
-
-> 其中 `config.vue` 和 `config.json` 文件，可以通过 [datav-cli-ui](./datav-cli-ui/) 工具进行配置，[更多详情 »](./datav-cli-ui/README.md)。
-
-- 工具预览
-![prop-config](./demo/prop-config.png)
-
-### 更多新建选项
-
-- 通过选项模式
-
-```bash
-# 创建组件
-pnpm run new component
-
-# 创建 Store
-pnpm run new store
-
-# 创建 Icon
-pnpm run new icons
-```
-
 ## 国际化
 目前只有 `登录页` 进行了国际化设置，有需要可自行添加。
 
@@ -216,17 +174,8 @@ setup() {
 ...
 ```
 
-## Donate
-
-如果你觉得这个项目帮助到了你，你可以帮作者买一杯奶茶或点心表示鼓励 :gift_heart:
-|Alipay|Wechat|
-| :------: | :------: |
-| ![donate-Alipay](./demo/donate/alipay.jpg)  |  ![donate-Wechat](./demo/donate/wechat.jpg) |
 
 ## 许可
 
 DataV Vue 使用 [MIT license](https://opensource.org/licenses/MIT) 许可证书。
 
-## 注意
-
-本项目主要用来研究与学习，如果商用请注意：项目里含有一些第三方付费素材。

@@ -1,19 +1,7 @@
 <template>
   <div>
     <div class="datav-hearder" :style="{ background: isFixed ? '#171b22' : '' }">
-      <div class="logo">
-        <div class="top-tip">
-          <strong class="tip-strong">公告</strong>
-          <div class="datav-marquee">
-            <span class="content">
-              <template v-for="n in 2" :key="n">
-                1. DataV 仅支持谷歌 Chrome 浏览器版本 62 以上。2. DataV 基于 Vue 3.x 开发。3. 项目地址：<a href="https://github.com/pengxiaotian/datav-vue" target="_blank" class="project-href">https://github.com/pengxiaotian/datav-vue</a>
-                <span class="content-space"></span>
-              </template>
-            </span>
-          </div>
-        </div>
-      </div>
+      <div class="logo"></div>
       <div class="user">
         <div class="header-item">
           <n-dropdown
@@ -169,68 +157,6 @@ export default defineComponent({
       height: 20px;
       color: var(--datav-font-color);
     }
-  }
-}
-
-.top-tip {
-  padding: 6px 0;
-  font-size: 12px;
-  color: var(--datav-font-color);
-  display: flex;
-  right: 0;
-  height: 30px;
-  margin-right: 24px;
-  width: 600px;
-
-  .tip-strong {
-    white-space: nowrap;
-    padding-right: 8px;
-  }
-}
-
-.datav-marquee {
-  display: block;
-  margin: 0 auto;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: clip;
-  position: relative;
-
-  .content {
-    display: inline-block;
-    position: relative;
-    padding-right: 0;
-    white-space: nowrap;
-    animation: marque-animation 20s infinite linear;
-    z-index: 0;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
-
-  .content-space {
-    display: inline-block;
-    width: 5em;
-  }
-
-  .project-href {
-    color: var(--datav-font-color);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-@keyframes marque-animation {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-50%);
   }
 }
 
